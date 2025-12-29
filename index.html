@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenThumb - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">GreenThumb</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="plants.html">Plants</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="cart-icon" id="cart-icon-header">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span> </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-slider">
+            <div class="slider-container">
+                <div class="slide">
+                    <img src="images/hero-bg-1.jpg" alt="Vibrant Green Plants">
+                    <div class="slide-content">
+                        <h1>Discover Your Green Sanctuary</h1>
+                        <p>Explore a world of lush plants, from vibrant flowers to serene indoor companions.</p>
+                        <a href="plants.html" class="btn">Shop All Plants</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/hero-bg-2.jpg" alt="Indoor Plants Collection">
+                    <div class="slide-content">
+                        <h1>Bring Nature Indoors</h1>
+                        <p>Find the perfect indoor plants to purify your air and uplift your spirit.</p>
+                        <a href="plants.html?category=Indoor" class="btn">Shop Indoor Plants</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/hero-bg-3.jpg" alt="Flowering Plants">
+                    <div class="slide-content">
+                        <h1>Blossom with Beauty</h1>
+                        <p>Add a splash of color to your garden with our exquisite collection of flowering plants.</p>
+                        <a href="plants.html?category=Flower" class="btn">Shop Flowering Plants</a>
+                    </div>
+                </div>
+            </div>
+            <button class="prev-slide">&#10094;</button>
+            <button class="next-slide">&#10095;</button>
+        </section>
+
+        <section class="section categories-section">
+            <div class="container">
+                <h2>Explore Our Plant Categories</h2>
+                <div class="category-grid">
+                    <a href="plants.html?category=Indoor" class="category-card">
+                        <img src="images/indoor_plants_category.jpg" alt="Indoor Plants">
+                        <h3>Indoor Plants</h3>
+                        <button class="btn secondary-btn">Browse Collection</button>
+                    </a>
+                    <a href="plants.html?category=Herb" class="category-card">
+                        <img src="images/herbs_category.jpg" alt="Herbs">
+                        <h3>Herbs</h3>
+                        <button class="btn secondary-btn">Browse Collection</button>
+                    </a>
+                    <a href="plants.html?category=Flower" class="category-card">
+                        <img src="images/flowering_plants_category.jpg" alt="Flowering Plants">
+                        <h3>Flowering Plants</h3>
+                        <button class="btn secondary-btn">Browse Collection</button>
+                    </a>
+                    <a href="plants.html?category=Succulents" class="category-card">
+                        <img src="images/succulents_category.jpg" alt="Succulents">
+                        <h3>Succulents</h3>
+                        <button class="btn secondary-btn">Browse Collection</button>
+                    </a>
+                    <a href="plants.html?category=Tree" class="category-card">
+                        <img src="images/trees_category.jpg" alt="Tree Plants">
+                        <h3>Tree Plants</h3>
+                        <button class="btn secondary-btn">Browse Collection</button>
+                    </a>
+                    <a href="plants.html?category=Decorative" class="category-card">
+                        <img src="images/decorative_plants_category.jpg" alt="Decorative Plants">
+                        <h3>Decorative Plants</h3>
+                        <button class="btn secondary-btn">Browse Collection</button>
+                    </a>
+                </div>
+                <div class="view-all-btn-container">
+                    <a href="plants.html" class="btn">View All Plants</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section featured-products">
+            <div class="container">
+                <h2>Our Bestsellers</h2>
+                <div class="plant-grid">
+                    <div class="plant-card">
+                        <img src="images/snake-plant.jpg" alt="Snake Plant">
+                        <h3>Snake Plant</h3>
+                        <p>Easy-care indoor plant, purifies air.</p>
+                        <p class="price">₹200</p>
+                        <button class="add-to-cart-btn btn" data-id="26">Add to Cart</button>
+                    </div>
+                    <div class="plant-card">
+                        <img src="images/rose.jpg" alt="Rose">
+                        <h3>Rose</h3>
+                        <p>Classic beauty, fragrant blooms.</p>
+                        <p class="price">₹250</p>
+                        <button class="add-to-cart-btn btn" data-id="9">Add to Cart</button>
+                    </div>
+                    <div class="plant-card">
+                        <img src="images/aloe-vera.jpg" alt="Aloe Vera">
+                        <h3>Aloe Vera</h3>
+                        <p>Medicinal succulent, low maintenance.</p>
+                        <p class="price">₹150</p>
+                        <button class="add-to-cart-btn btn" data-id="5">Add to Cart</button>
+                    </div>
+                    <div class="plant-card">
+                        <img src="images/neem.jpg" alt="Neem Tree">
+                        <h3>Neem Tree</h3>
+                        <p>Traditional medicinal tree.</p>
+                        <p class="price">₹300</p>
+                        <button class="add-to-cart-btn btn" data-id="17">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section why-choose-us-section">
+            <div class="container">
+                <h2>Why Choose GreenThumb?</h2>
+                <div class="promo-grid">
+                    <div class="promo-item">
+                        <i class="fas fa-seedling"></i>
+                        <h3>Healthy Plants</h3>
+                        <p>We ensure all our plants are nurtured from seed to sale, guaranteeing robust health.</p>
+                    </div>
+                    <div class="promo-item">
+                        <i class="fas fa-truck-fast"></i>
+                        <h3>Fast & Safe Delivery</h3>
+                        <p>Your green companions are delivered swiftly and securely, right to your doorstep.</p>
+                    </div>
+                    <div class="promo-item">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h3>Expert Care Tips</h3>
+                        <p>Access our comprehensive guides and personalized advice to help your plants flourish.</p>
+                    </div>
+                    <div class="promo-item">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Sustainable Sourcing</h3>
+                        <p>We're committed to eco-friendly practices, sourcing plants responsibly for a greener planet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Our Story, Your Green Journey</h2>
+                <p style="max-width: 800px; margin: 0 auto 40px; color: var(--text-color-muted);">
+                    At GreenThumb, we believe in the power of plants to transform spaces and lives. Learn about our passion, our mission, and how we're dedicated to helping you cultivate your own slice of nature.
+                </p>
+                <a href="about.html" class="btn">Learn More About Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>GreenThumb</h4>
+                <p>Your ultimate destination for premium plants and expert care, designed to bring nature's tranquility into your life.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="plants.html">Plants</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Green Avenue, Garden City, Earth</p>
+                <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fas fa-envelope"></i> support@greenthumb.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 GreenThumb. All rights reserved.
+        </div>
+    </footer>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+            <div class="cart-summary">
+                <p>Total: ₹<span id="cart-total">0</span></p>
+                <button class="btn secondary-btn" id="clear-cart-btn">Clear Cart</button>
+                <button class="btn" id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
